@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Hotel Booking Test Suite" parallel="tests" thread-count="2">
+    
+    <listeners>
+        <listener class-name="com.hotel.listeners.TestListener"/>
+    </listeners>
+    
+    <test name="Hotel Search Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.hotel.tests.HotelSearchTest"/>
+        </classes>
+    </test>
+    
+    <test name="Hotel Booking Tests">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.hotel.tests.HotelBookingTest"/>
+        </classes>
+    </test>
+    
+    <!-- REMOVE THIS BLOCK IF CLASS DOESN'T EXIST -->
+    <!-- 
+    <test name="Smoke Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.hotel.tests.SmokeTestSuite"/>
+        </classes>
+    </test>
+    -->
+    
+</suite>

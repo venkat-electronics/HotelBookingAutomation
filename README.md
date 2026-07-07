@@ -41,4 +41,3 @@ Complete test automation framework for hotel booking websites using **Selenium W
 | **Apache POI** | 5.2.5 | Excel Data Reading |
 | **WebDriverManager** | 5.6.2 | Automatic Driver Management |
 
-## 📁 Project Structure
